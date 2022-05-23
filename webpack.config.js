@@ -6,20 +6,18 @@ module.exports = {
     entry: {
         index: './src/index.js',
     },
-    devTool: 'inline-source-map',
+    devtool: 'inline-source-map',
     devServer: {
         static: './dist',
     },
     plugins: [
         new HtmlWebpackPlugin({
-            title: 'Restaurant Page'
+            title: 'Restaurant Page',
         }),
     ],
     output: {
         filename: 'main.js',
         path: path.resolve(__dirname, 'dist'),
-    },
-    optimization: {
-        runtimeChunk: 'single',
+        clean: true,
     },
 };
