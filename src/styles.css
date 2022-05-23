@@ -7,6 +7,8 @@
     height: 100vh;
     display: grid;
     grid-template-rows: 1fr 4fr 0.5fr;
+    background: url('bakery.jpg') no-repeat center center fixed;
+    background-size: cover;
 }
 
 .header {
