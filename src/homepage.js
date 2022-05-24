@@ -14,9 +14,9 @@ function generateFrontPage() {
     const menu = document.createElement('p');
     const contact = document.createElement('p');
 
-    about.textContent = 'About';
-    menu.textContent = 'Menu';
-    contact.textContent = 'Contact';
+    about.textContent = 'ABOUT';
+    menu.textContent = 'MENU';
+    contact.textContent = 'CONTACT';
 
     header.appendChild(about);
     header.appendChild(menu);
@@ -31,14 +31,17 @@ function generateFrontPage() {
 
     main.appendChild(box);
 
+    const welcome = document.createElement('p');
     const title = document.createElement('p');
     const menuButton = document.createElement('button');
 
     menuButton.classList.add('menu-button');
 
-    title.textContent = `Jon's Bakery`;
+    welcome.textContent = 'Welcome';
+    title.textContent = `JON'S BAKERY`;
     menuButton.textContent = 'MENU';
 
+    box.appendChild(welcome);
     box.appendChild(title);
     box.appendChild(menuButton);
 
