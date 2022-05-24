@@ -80,5 +80,7 @@ function renderGithubIcon(node) {
     return node.appendChild(iconSvg);
 }
 
-contentWrapper();
-generateFrontPage();
+module.exports = {
+    contentWrapper: contentWrapper,
+    generateFrontPage: generateFrontPage
+}
