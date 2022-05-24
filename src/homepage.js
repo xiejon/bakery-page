@@ -18,8 +18,8 @@ function generateFrontPage() {
     menu.textContent = 'MENU';
     contact.textContent = 'CONTACT';
 
-    header.appendChild(about);
     header.appendChild(menu);
+    header.appendChild(about);
     header.appendChild(contact);
 
     // main

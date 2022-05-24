@@ -28,7 +28,7 @@
     justify-content: center;
     align-items: center;
     gap: 3rem;
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(20, 36, 37, 0.6);
     font-size: 1.25rem;
     color: rgb(244, 174, 25);
 }
@@ -47,14 +47,14 @@
 }
 
 .box {
-    height: clamp(275px, 40vh, 325px);
-    width: clamp(600px, 70vw, 800px);
+    height: 300px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 1.5rem;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(20, 36, 37, 0.8);
     border-radius: 5px;
     position: relative;
 }
@@ -103,7 +103,7 @@
     justify-content: center;
     align-items: center;
     gap: 5px;
-    background:rgba(0, 0, 0, 0.4);
+    background:rgba(20, 36, 37, 0.4);
     color:rgb(244, 174, 25);
 }
 
