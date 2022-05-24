@@ -38,7 +38,7 @@ function generateFrontPage() {
     menuButton.classList.add('menu-button');
 
     welcome.textContent = 'Welcome';
-    title.textContent = `JON'S BAKERY`;
+    title.textContent = `THE LAUGENSTANGE`;
     menuButton.textContent = 'VIEW MENU';
 
     box.appendChild(welcome);
