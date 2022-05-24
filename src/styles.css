@@ -44,7 +44,7 @@
     background: rgba(0, 0, 0, 0.6);
     font-size: 1.25rem;
     font-weight: 600;
-    color: rgb(230, 157, 0);
+    color: rgb(244, 174, 25);
 }
 
 .header p:hover {
@@ -54,6 +54,7 @@
 }
 
 .main {
+    padding-bottom: 10vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -82,7 +83,7 @@
     padding: 5px;
     font-size: 20px;
     font-weight: 800;
-    background-color: rgb(230, 157, 0);
+    background-color: rgb(244, 174, 25);
     border: none;
     border-radius: 5px;
     color: rgb(0, 0, 0);
@@ -95,7 +96,19 @@
 }
 
 .footer {
+    height: 30px;
+    align-self: flex-end;
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 5px;
+    background:rgba(0, 0, 0, 0.4);
+    color:rgb(244, 174, 25);
+}
+
+.footer svg {
+    display: flex;
+    align-items: center;
+    height: 19px;
+    fill:rgb(244, 174, 25);
 }
