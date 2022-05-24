@@ -1,13 +1,24 @@
 @font-face {
     font-family: 'Nunito Sans';
     src: url(Nunito_Sans/NunitoSans-Regular.ttf);
-    font-weight: normal;
+    font-weight: 500;
 }
 
 @font-face {
     font-family: 'Nunito Sans';
     src: url(Nunito_Sans/NunitoSans-Bold.ttf);
-    font-weight: bold;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Nunito Sans';
+    src: url(Nunito_Sans/NunitoSans-SemiBold.ttf);
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Courgette';
+    src: url(Courgette/Courgette-Regular.ttf);
 }
 
 * {
@@ -25,10 +36,21 @@
 }
 
 .header {
+    height: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 3rem;
+    background: rgba(0, 0, 0, 0.6);
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: rgb(230, 157, 0);
+}
+
+.header p:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: 120ms;
 }
 
 .main {
@@ -38,25 +60,38 @@
 }
 
 .box {
-    height: 40vh;
-    width: 60vw;
+    height: clamp(275px, 40vh, 325px);
+    width: clamp(500px, 70vw, 800px);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 10px;
-    background: rgba(0, 0, 0, 0.7);
+    gap: 1.5rem;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
 }
 
 .box p {
-    font-size: 3rem;
-    color: white;
+    font-family: 'Courgette';
+    font-size: 5rem;
+    color: rgb(255, 255, 255);
 }
 
 .menu-button {
+    width: 10vw;
     padding: 5px;
-    font-size: 18px;
-    font-weight: bold;
+    font-size: 20px;
+    font-weight: 800;
+    background-color: rgb(230, 157, 0);
+    border: none;
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+}
+
+.menu-button:hover {
+    cursor: pointer;
+    transform: scale(1.07);
+    transition: 120ms;
 }
 
 .footer {
