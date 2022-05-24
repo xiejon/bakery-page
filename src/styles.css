@@ -47,8 +47,8 @@
 
 .box {
     position: absolute;
-    top: -10vh;
-    height: 350px;
+    top: -5vh;
+    height: 400px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -67,13 +67,28 @@
     color:rgb(244, 174, 25);
 }
 
-.box p:last-of-type {
+.box p:nth-child(2) {
     position: absolute;
-    top: 33%;
+    top: 28%;
     font-family: 'Domine';
     font-size: 4.5rem;
     color: rgb(250, 206, 111);
     z-index: 990;
+}
+
+/* styling div */
+.box div {
+    position: absolute;
+    top: 53%;
+    width: 500px;
+    border: 1px solid rgb(244, 174, 25);
+}
+
+.box p:last-of-type {
+    position: absolute;
+    top: 60%;
+    color: rgb(244, 174, 25);
+
 }
 
 .menu-button {

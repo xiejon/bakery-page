@@ -33,16 +33,21 @@ function generateFrontPage() {
 
     const welcome = document.createElement('p');
     const title = document.createElement('p');
+    const stylingDiv = document.createElement('div');
+    const subtitle = document.createElement('p');
     const menuButton = document.createElement('button');
 
     menuButton.classList.add('menu-button');
 
     welcome.textContent = 'Welcome';
     title.textContent = `THE LAUGENSTANGE`;
+    subtitle.textContent = `Lower Manhattan's award-winning pretzel shop.`
     menuButton.textContent = 'VIEW MENU';
 
     box.appendChild(welcome);
     box.appendChild(title);
+    box.appendChild(stylingDiv);
+    box.appendChild(subtitle);
     box.appendChild(menuButton);
 
     // footer
