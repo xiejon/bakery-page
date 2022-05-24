@@ -40,13 +40,14 @@
 }
 
 .main {
-    padding-bottom: 10vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .box {
+    position: absolute;
+    top: -10vh;
     height: 300px;
     width: 100%;
     display: flex;
@@ -60,15 +61,15 @@
 
 .box p:first-of-type {
     position: absolute;
-    top: 8%;
-    font-size: 4rem;
+    top: 6%;
+    font-size: 5rem;
     font-family: 'Parisienne';
     color:rgb(244, 174, 25);
 }
 
 .box p:last-of-type {
     position: absolute;
-    top: 30%;
+    top: 33%;
     font-family: 'Domine';
     font-size: 5rem;
     color: rgb(255, 255, 255);
@@ -78,7 +79,7 @@
 .menu-button {
     position: absolute;
     top: 70%;
-    min-width: 100px;
+    min-width: 190px;
     width: 130px;
     padding: 8px;
     font-size: 20px;
@@ -113,8 +114,27 @@
 
 /* about page */
 .about {
-    height: 100%;
+    min-height: 500px;
+    height: calc(100vh - 10vh - 100px);
     width: 100%;
-    background-color: black;
-    z-index: 999;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(20, 36, 37, 0.7);
+}
+
+.about p:first-of-type {
+    padding-top: 30px;
+    font-size: 70px;
+    font-family: "Parisienne";
+    font-weight: bold;
+    color:rgb(244, 174, 25);
+}
+
+.about p:last-of-type {
+    padding: 30px;
+    max-width: 700px;
+    font-size: 1.1rem;
+    text-align: center;
+    line-height: 1.5rem;
+    color: white;
 }
