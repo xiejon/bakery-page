@@ -10,14 +10,22 @@ module.exports = {
     devServer: {
         static: './dist',
     },
-    // plugins: [
-    //     new HtmlWebpackPlugin({
-    //         title: 'Restaurant Page',
-    //     }),
-    // ],
+    plugins: [
+        new HtmlWebpackPlugin({
+            title: `Jon's Bakery`,
+        }),
+    ],
     output: {
         filename: 'main.js',
         path: path.resolve(__dirname, 'dist'),
         clean: true,
+    },
+    module: {
+        rules: [
+            {
+                test: /\.css$/i,
+                use: ['style-loader', 'css-loader'],
+            },
+        ],
     },
 };
