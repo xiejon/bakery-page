@@ -27,7 +27,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 3rem;
+    gap: 30px;
     background: rgba(20, 36, 37, 0.6);
     font-size: 1.25rem;
     color: rgb(244, 174, 25);
@@ -35,8 +35,8 @@
 
 .header p:hover {
     cursor: pointer;
-    transform: scale(1.05);
-    transition: 120ms;
+    color: white;
+    transition: 100ms;
 }
 
 .main {
@@ -55,7 +55,6 @@
     justify-content: center;
     gap: 1.5rem;
     background: rgba(20, 36, 37, 0.8);
-    border-radius: 5px;
     position: relative;
 }
 
@@ -80,20 +79,19 @@
     position: absolute;
     top: 70%;
     min-width: 100px;
-    width: 10vw;
-    padding: 5px;
+    width: 130px;
+    padding: 8px;
     font-size: 20px;
     font-weight: 800;
     background-color: rgb(244, 174, 25);
     border: none;
-    border-radius: 5px;
     color: rgb(0, 0, 0);
 }
 
 .menu-button:hover {
     cursor: pointer;
     color: white;
-    transition: 120ms;
+    transition: 100ms;
 }
 
 .footer {
