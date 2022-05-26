@@ -1,6 +1,7 @@
 function generateContactPage(element) {
     const container = document.createElement('div');
     const mapRow = document.createElement('div');
+    const textRow = document.createElement('div');
     const row2 = document.createElement('div');
     const row3 = document.createElement('div');
     const row4 = document.createElement('div');
@@ -16,7 +17,8 @@ function generateContactPage(element) {
     hours.textContent = 'Mon-Fri 08:00-17:00 | Sat-Sun 10:00-14:00';
 
     element.appendChild(container);
-    container.append(mapRow, row2, row3, row4);
+    container.append(mapRow, textRow);
+    textRow.append(row2, row3, row4);
     embedMap(mapRow);
     // address section
     markerSvg(row2);
