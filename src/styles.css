@@ -82,6 +82,7 @@
     top: 53%;
     width: 500px;
     border: 1px solid rgb(244, 174, 25);
+    border-radius: 1px;
 }
 
 .box p:last-of-type {
