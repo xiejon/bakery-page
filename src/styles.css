@@ -154,3 +154,11 @@
     line-height: 1.5rem;
     color: white;
 }
+
+/* menu page */
+.menu {
+    min-height: 500px;
+    height: calc(100vh - 10vh - 100px);
+    width: 100%;
+    background-color: rgba(20, 36, 37, 0.7);
+}
