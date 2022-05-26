@@ -2,6 +2,7 @@ import './styles.css';
 import { contentWrapper, generateFrontPage } from './homepage.js';
 import { generateAboutPage } from './about.js';
 import { generateMenu } from './menu.js';
+import { generateContactPage } from './contact.js';
 
 const homePage = (() => {
     contentWrapper(); 
@@ -40,6 +41,12 @@ const menuSection = (() => {
     return {
         menuPage: menuPage
     }
+})();
+
+const contactSection = (() => {
+    const main = document.querySelector('.main');
+    generateContactPage(main);
+
 })();
 
 function togglePage(element, pageA, displayType) {

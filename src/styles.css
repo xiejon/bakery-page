@@ -189,7 +189,6 @@
     color: rgb(250, 206, 111);
 }
 
-/* create spacing on bottom */
 .menu div:last-of-type {
     padding-bottom: 30px;
 }
