@@ -30,10 +30,12 @@ const menuSection = (() => {
 
     const menuLink = document.querySelector('.header p:nth-of-type(1)');
     const menuPage = document.querySelector('.menu');
+    const menuButton = document.querySelector('.menu-button');
 
-    menuLink.addEventListener('click', () => {
-        const toggle = togglePage(menuPage, aboutSection.aboutPage,'grid');
-    });
+    const toggle = () => togglePage(menuPage, aboutSection.aboutPage,'grid');
+
+    menuLink.addEventListener('click', toggle);
+    menuButton.addEventListener('click', toggle);
 
     return {
         menuPage: menuPage
