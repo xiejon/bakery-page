@@ -16,8 +16,12 @@ const aboutSection = (() => {
     const aboutPage = document.querySelector('.about');
 
     aboutLink.addEventListener('click', () => {
-        const toggle = togglePage(aboutPage, 'flex');
+        const toggle = togglePage(aboutPage, menuSection.menuPage, 'flex');
     });
+
+    return {
+        aboutPage: aboutPage
+    }
 })();
 
 const menuSection = (() => {
@@ -28,18 +32,24 @@ const menuSection = (() => {
     const menuPage = document.querySelector('.menu');
 
     menuLink.addEventListener('click', () => {
-        const toggle = togglePage(menuPage, 'grid');
-    })
+        const toggle = togglePage(menuPage, aboutSection.aboutPage,'grid');
+    });
+
+    return {
+        menuPage: menuPage
+    }
 })();
 
-function togglePage(element, displayType) {
+function togglePage(element, pageA, displayType) {
     const box = document.querySelector('.box');
+
     if (element.style.display === 'none') {
         element.style.display = displayType;
+        pageA.style.display = 'none';
         box.style.display = 'none';
         
     } else {
         element.style.display = 'none';
-        box.style.display = displayType;
+        box.style.display = 'flex';
     }
 }

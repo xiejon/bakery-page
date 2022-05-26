@@ -30,7 +30,7 @@ function generateMenu(element) {
 
     container.classList.add('menu');
 
-    menu.textContent = 'MENU';
+    menu.textContent = 'Menu';
     title.textContent = 'Pretzels';
     plain.textContent = 'Plain';
     pumpkin.textContent = 'Pumpkin Seed';
@@ -47,6 +47,7 @@ function generateMenu(element) {
     price6.textContent = '8.5/10';
 
     element.appendChild(container);
+    container.appendChild(menu);
     container.appendChild(titleContainer);
     container.appendChild(item1);
     container.appendChild(item2);
