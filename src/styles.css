@@ -200,3 +200,29 @@
 .menu div p:first-child {
     grid-column: 2;
 }
+
+/* contact page */
+.contact {
+    min-height: 500px;
+    height: calc(100vh - 10vh - 100px);
+    width: 100%;
+    grid-template-rows: 4fr 1fr 1fr 1fr;
+    justify-content: center;
+    background-color: rgba(20, 36, 37, 0.7);
+    fill:rgb(244, 174, 25);
+}
+
+.contact div:first-child {
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+.contact div:not(:first-child) {
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+    font-size: 17px;
+    color:rgb(250, 206, 111);
+}

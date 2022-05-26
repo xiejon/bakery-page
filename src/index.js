@@ -51,7 +51,7 @@ const contactSection = (() => {
     const contactPage = document.querySelector('.contact');
 
     contactLink.addEventListener('click', () => {
-        const toggle = togglePage(contactPage, aboutSection.aboutPage, menuSection.menuPage, 'flex');
+        const toggle = togglePage(contactPage, aboutSection.aboutPage, menuSection.menuPage, 'grid');
     });
 
     return {

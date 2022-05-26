@@ -1,20 +1,32 @@
 function generateContactPage(element) {
     const container = document.createElement('div');
+    const mapRow = document.createElement('div');
+    const row2 = document.createElement('div');
+    const row3 = document.createElement('div');
+    const row4 = document.createElement('div');
+
     const address = document.createElement('p');
     const phone = document.createElement('p');
+    const hours = document.createElement('p');
 
     container.classList.add('contact');
 
     address.textContent = 'Greenwich Village, New York, NY 10012, USA';
     phone.textContent = '(212) 893-9938';
+    hours.textContent = 'Mon-Fri 08:00-17:00 | Sat-Sun 10:00-14:00';
 
     element.appendChild(container);
-    container.appendChild(address);
-    container.appendChild(phone);
-    embedMap(container);
-    clockSvg(container);
-    markerSvg(container);
-    phoneSvg(container);
+    container.append(mapRow, row2, row3, row4);
+    embedMap(mapRow);
+    // address section
+    markerSvg(row2);
+    row2.appendChild(address);
+    // phone
+    phoneSvg(row3);
+    row3.appendChild(phone);
+    // hours
+    clockSvg(row4);
+    row4.appendChild(hours);
 
     // hide until called
     container.style.display = 'none';
