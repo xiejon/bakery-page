@@ -6,9 +6,11 @@ function generateContactPage(element) {
 
     title.textContent = 'Contact Us';
 
-    element.appendChild(title);
-    embedMap(element);
+    element.appendChild(container);
+    container.appendChild(title);
+    embedMap(container);
 
+    // hide until called
     container.style.display = 'none';
 }
 
