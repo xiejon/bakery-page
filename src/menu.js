@@ -38,13 +38,13 @@ function generateMenu(element) {
     rosemary.textContent = 'Rosemary';
     lox.textContent = 'Lox';
     truffle.textContent = 'Black Truffle';
-    sample.textContent = 'Small/Large';
-    price1.textContent = '2/3.5';
-    price2.textContent = '2.5/4';
-    price3.textContent = '2.5/4';
-    price4.textContent = '3/4.5';
-    price5.textContent = '4/5.5';
-    price6.textContent = '8.5/10';
+    sample.textContent = 'Small | Large';
+    price1.textContent = '2 | 3.5';
+    price2.textContent = '2.5 | 4';
+    price3.textContent = '2.5 | 4';
+    price4.textContent = '3 | 4.5';
+    price5.textContent = '4 | 5.5';
+    price6.textContent = '8.5 | 10';
 
     element.appendChild(container);
     container.appendChild(menu);
